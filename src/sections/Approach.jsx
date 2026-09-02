@@ -23,7 +23,7 @@ export default function Approach() {
                 key={p.step}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-100px' }}
+                viewport={{ once: false, margin: '-100px' }}
                 transition={{ duration: 0.7, delay: i * 0.08 }}
                 className={`grid gap-6 md:grid-cols-2 md:items-center ${i % 2 ? 'md:[direction:rtl]' : ''}`}
               >

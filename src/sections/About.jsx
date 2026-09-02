@@ -13,7 +13,7 @@ export default function About() {
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: '-80px' }}
+          viewport={{ once: false, margin: '-80px' }}
           transition={{ duration: 0.7 }}
         >
           <p className="mb-4 text-xs uppercase tracking-[0.35em] text-accent">01 — About</p>
@@ -27,7 +27,7 @@ export default function About() {
                 key={i}
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{ delay: 0.1 * i, duration: 0.6 }}
                 className="text-white/75 leading-relaxed"
               >
@@ -42,7 +42,7 @@ export default function About() {
                 key={f.label}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{ delay: 0.15 + i * 0.06, duration: 0.5 }}
                 className="rounded-xl bg-white/5 p-3 text-center border border-white/5"
               >

@@ -11,12 +11,12 @@ export default function Projects() {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section id="projects" className="section">
+    <section id="projects" className="section edition-projects">
       <div className="mx-auto max-w-6xl">
         <div className="mb-10">
-          <p className="mb-4 text-xs uppercase tracking-[0.35em] text-accent">05 — Projects</p>
+          <p className="mb-4 text-xs uppercase tracking-[0.35em] text-coral">05 — Projects</p>
           <h2 className="font-display text-4xl sm:text-5xl font-semibold">
-            Selected <span className="gradient-text">work</span>.
+            Selected <span className="title-highlight">work</span>.
           </h2>
         </div>
 
@@ -59,7 +59,7 @@ function ProjectCard({ project, index, onOpen }) {
       data-cursor="hover"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-60px' }}
+      viewport={{ once: false, margin: '-60px' }}
       transition={{ duration: 0.6, delay: index * 0.06 }}
       style={{
         transform: `perspective(900px) rotateX(${tilt.rx}deg) rotateY(${tilt.ry}deg)`,

@@ -21,7 +21,7 @@ export default function Playground() {
               key={p.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-80px' }}
+              viewport={{ once: false, margin: '-80px' }}
               transition={{ duration: 0.55, delay: i * 0.05 }}
               whileHover={{ y: -4 }}
               data-cursor="hover"

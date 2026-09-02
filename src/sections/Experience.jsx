@@ -18,7 +18,7 @@ export default function Experience() {
               key={i}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: '-80px' }}
+              viewport={{ once: false, margin: '-80px' }}
               transition={{ delay: i * 0.08, duration: 0.6 }}
               className="mb-8 last:mb-0"
             >

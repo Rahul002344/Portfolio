@@ -23,7 +23,7 @@ export default function Skills() {
               key={s.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-60px' }}
+              viewport={{ once: false, margin: '-60px' }}
               transition={{ delay: i * 0.03, duration: 0.5 }}
               whileHover={{ y: -4, scale: 1.02 }}
               data-cursor="hover"
@@ -40,7 +40,7 @@ export default function Skills() {
                 <motion.div
                   initial={{ width: 0 }}
                   whileInView={{ width: `${s.level}%` }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false }}
                   transition={{ delay: 0.2 + i * 0.03, duration: 0.9, ease: 'easeOut' }}
                   className="h-full rounded-full"
                   style={{ background: `linear-gradient(90deg, ${s.color}, #22d3ee)` }}
