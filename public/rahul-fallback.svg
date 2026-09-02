@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0a0f1f"/>
+      <stop offset="1" stop-color="#1a1147"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#1e2a55"/>
+      <stop offset="1" stop-color="#0b1230"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" x2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="face" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#f6c9a3"/>
+      <stop offset="1" stop-color="#c88b60"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="230" r="200" fill="url(#glow)"/>
+
+  <!-- Hair -->
+  <path d="M120 140 C 130 70, 270 70, 285 140 C 300 155, 300 200, 285 205 C 275 165, 250 150, 200 145 C 150 150, 125 165, 115 205 C 100 200, 100 155, 120 140 Z" fill="#1a1210"/>
+
+  <!-- Face -->
+  <ellipse cx="200" cy="200" rx="72" ry="86" fill="url(#face)"/>
+
+  <!-- Eyes -->
+  <ellipse cx="176" cy="200" rx="6" ry="4" fill="#1c0f0a"/>
+  <ellipse cx="224" cy="200" rx="6" ry="4" fill="#1c0f0a"/>
+
+  <!-- Eyebrows -->
+  <path d="M164 186 Q176 180 190 186" stroke="#1a1210" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M210 186 Q224 180 236 186" stroke="#1a1210" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M200 210 L196 232 Q200 236 204 232 Z" fill="#a76a44" opacity="0.5"/>
+
+  <!-- Smile -->
+  <path d="M180 248 Q200 262 220 248" stroke="#5a2a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Neck -->
+  <path d="M180 268 L180 302 Q200 316 220 302 L220 268 Z" fill="#c88b60"/>
+
+  <!-- Shirt collar -->
+  <path d="M150 310 L200 340 L250 310 L250 340 L200 360 L150 340 Z" fill="#f4f4f8"/>
+
+  <!-- Suit -->
+  <path d="M80 500 L80 380 Q100 340 150 340 L200 370 L250 340 Q300 340 320 380 L320 500 Z" fill="url(#suit)"/>
+  <!-- Lapels -->
+  <path d="M150 340 L200 380 L200 500 L120 500 Z" fill="#12193a"/>
+  <path d="M250 340 L200 380 L200 500 L280 500 Z" fill="#12193a"/>
+
+  <!-- Lapel pin -->
+  <circle cx="235" cy="368" r="5" fill="url(#acc)"/>
+
+  <!-- Rim light -->
+  <path d="M120 140 Q130 105 200 100 Q270 105 280 140" stroke="url(#acc)" stroke-width="1.2" fill="none" opacity="0.6"/>
+
+  <!-- Watermark initials -->
+  <text x="200" y="480" text-anchor="middle" font-family="Inter, Arial" font-weight="700" font-size="14" fill="url(#acc)" opacity="0.9" letter-spacing="4">RAHUL KUMAR DUTTA</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#05070f"/>
+      <stop offset="1" stop-color="#0a0f1f"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0" x2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1000" cy="150" r="120" fill="url(#grad)" opacity="0.35"/>
+  <text x="80" y="300" font-family="Inter,Arial" font-weight="800" font-size="86" fill="#fff">Rahul Kumar Dutta</text>
+  <text x="80" y="360" font-family="Inter,Arial" font-weight="500" font-size="34" fill="url(#grad)">AI/ML • Full-Stack • 3D Web</text>
+  <text x="80" y="560" font-family="Inter,Arial" font-weight="400" font-size="22" fill="#a3b3cc">Interactive 3D portfolio — React · Three.js · GSAP</text>
+</svg>

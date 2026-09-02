@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Space Grotesk', Inter, system-ui, sans-serif;
+  background: radial-gradient(1200px 800px at 20% 10%, #0d1230 0%, #05070f 55%, #04050a 100%);
+  overflow-x: hidden;
+}
+
+/* hide native cursor when custom cursor is enabled (desktop only) */
+@media (hover: hover) and (pointer: fine) {
+  body.custom-cursor,
+  body.custom-cursor * {
+    cursor: none !important;
+  }
+}
+
+/* Section base — big padding = long, cinematic scroll */
+.section {
+  position: relative;
+  min-height: 110vh;
+  width: 100%;
+  padding: 10rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glass card */
+.glass {
+  background: rgba(12, 18, 38, 0.45);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid rgba(124, 92, 255, 0.18);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #7c5cff 0%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.neon-border {
+  position: relative;
+}
+.neon-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(124, 92, 255, 0.6), rgba(34, 211, 238, 0.3), transparent 60%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Utility: subtle animated grid backdrop */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse at 50% 40%, black 40%, transparent 75%);
+}
+
+/* scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #05070f; }
+::-webkit-scrollbar-thumb { background: linear-gradient(#7c5cff, #22d3ee); border-radius: 8px; }
+
+/* selection */
+::selection { background: rgba(124, 92, 255, 0.35); color: #fff; }
+
+/* utility for the fixed 3D canvas layer */
+.fixed-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Word reveal (used by Hero) */
+.reveal-mask {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.reveal-mask > span {
+  display: inline-block;
+  will-change: transform;
+}
+
+@keyframes floatSlow {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
